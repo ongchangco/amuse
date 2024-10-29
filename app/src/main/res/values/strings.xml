@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Amuse</string>
+    <string name="title_activity_museum_finder">MuseumFinder</string>
 </resources>

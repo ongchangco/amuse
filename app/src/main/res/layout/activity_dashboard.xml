@@ -8,4 +8,119 @@
     tools:context=".Dashboard"
     android:background="@color/GrayBlue">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/clButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/txtTitle"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/txtSubTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="@string/txtSubTitle"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clTitle">
+
+        <Button
+            android:id="@+id/btnFaM"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:backgroundTint="@color/Juniper"
+            android:shadowColor="@color/black"
+            android:shadowRadius="2"
+            android:text="@string/btnFaM"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toTopOf="@id/btnMNav"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnMNav"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:backgroundTint="@color/Juniper"
+            android:shadowColor="@color/black"
+            android:shadowRadius="2"
+            android:text="@string/btnMNav"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnFaM"
+            app:layout_constraintBottom_toTopOf="@id/btnQrScanner"/>
+
+        <Button
+            android:id="@+id/btnQrScanner"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:backgroundTint="@color/Juniper"
+            android:shadowColor="@color/black"
+            android:shadowRadius="2"
+            android:text="@string/btnQrScan"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnMNav"
+            app:layout_constraintBottom_toTopOf="@id/btnMyAMUSE"/>
+
+        <Button
+            android:id="@+id/btnMyAMUSE"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:backgroundTint="@color/Juniper"
+            android:shadowColor="@color/black"
+            android:shadowRadius="2"
+            android:text="@string/btnMyAMUSE"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnQrScanner"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

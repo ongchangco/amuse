@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Amuse</string>
     <string name="title_activity_museum_finder">MuseumFinder</string>
+    <string name="txtTitle">AMUSE</string>
+    <string name="txtSubTitle">A Smart Museum</string>
+    <string name="btnFaM">Find a Museum</string>
+    <string name="btnMNav">Museum Navigator</string>
+    <string name="btnQrScan">QR Scanner</string>
+    <string name="btnMyAMUSE">My AMUSE</string>
 </resources>

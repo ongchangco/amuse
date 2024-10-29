@@ -3,4 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="GrayBlue">#8CA9AD</color>
+    <color name="Patina">#5F888E</color>
+    <color name="Juniper">#60848c</color>
 </resources>

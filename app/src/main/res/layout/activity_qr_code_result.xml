@@ -27,7 +27,7 @@
             android:layout_width="50dp"
             android:layout_height="35dp"
             android:background="@drawable/menu_buttton"
-            android:layout_margin="2dp"/>
+            android:layout_marginStart="25dp"/>
         <Button
             android:layout_width="75dp"
             android:layout_height="50dp"

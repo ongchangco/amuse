@@ -7,4 +7,40 @@
     <string name="btnMNav">Museum Navigator</string>
     <string name="btnQrScan">QR Scanner</string>
     <string name="btnMyAMUSE">My AMUSE</string>
-</resources>
+
+    //QR CODE RESULT PAGE
+    <string name="resTitle">MONA LISA’S SCREAM</string>
+    <string name="resDescr">monalisascream</string>
+    <string name="aName"><u>ARTIST</u></string>
+    <string name="aNameSub">JAMES BEYNTON</string>
+    <string name="mUsed"><u>MATERIALS USED</u></string>
+    <string name="mUsedSub">oil paint, tempera poplar wood panel</string>
+    <string name="btnPuzzle">SOLVE ART PUZZLE</string>
+    <string name="txtScroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    //MY AMUSE PAGE
+    <string name="myAmuseTitle">MY AMUSE</string>
+    <string name="museumVisited">MUSEUMS VISITED:</string>
+    <string name="btnRedeem">REDEEM</string>
+    <string name="amuseStamp">Solve MORE PUZZLES to collect MORE AMUSE STAMPS!</string>
+
+
+    <string name="museumDetails">
+        QR Codes Scanned :      4 <br/>
+        QR Puzzles Solved:      2 <br/>
+        Stamps Collected :      6 <br/>
+        Last Visited     :      10/15/2024 <br/>
+    </string>
+
+
+    <!--
+    <string name="dropdownMA"> </string>
+    <string-array name="museum_array">
+        <item>The National Museum</item>
+        <item>Museo Kordilyera</item>
+        <item>BenCab Museum</item>
+        <item>Baguio Museum</item>
+    </string-array>
+   -->
+
+    </resources>

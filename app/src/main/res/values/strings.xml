@@ -7,6 +7,8 @@
     <string name="btnMNav">Museum Navigator</string>
     <string name="btnQrScan">QR Scanner</string>
     <string name="btnMyAMUSE">My AMUSE</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnRegister">Register</string>
 
     //QR CODE RESULT PAGE
     <string name="resTitle">MONA LISA’S SCREAM</string>

@@ -73,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
+            android:background="@color/Light_Blue"
             android:text="@string/txtScroll"
             android:textColor="@color/black"
             android:textSize="12sp">

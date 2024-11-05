@@ -27,13 +27,10 @@
     <string name="amuseStamp">Solve MORE PUZZLES to collect MORE AMUSE STAMPS!</string>
 
 
-    <string name="museumDetails">
-        QR Codes Scanned :      4 <br />
-        QR Puzzles Solved:      2 <br />
-        Stamps Collected :      6 <br />
-        Last Visited     :      10/15/2024 <br />
-    </string>
-
+    <string name="mDetails1">QR Codes Scanned :      4</string>
+    <string name="mDetails2">QR Puzzles Solved:      2</string>
+    <string name="mDetails3">Stamps Collected :      6</string>
+    <string name="mDetails4">Last Visited     :      10/15/2024</string>
 
     <!--
     <string name="dropdownMA"> </string>

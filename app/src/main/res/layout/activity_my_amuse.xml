@@ -8,6 +8,45 @@
     android:background="@color/GrayBlue"
     tools:context=".MyAMUSE">
 
+    <Toolbar
+        android:id="@+id/navBar"
+        android:layout_width="381dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_corner"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/menu_buttton" />
+
+    </Toolbar>
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_margin="2dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/Transparent"
+        android:outlineAmbientShadowColor="@color/Transparent"
+        android:outlineSpotShadowColor="@color/Transparent"
+        android:shadowColor="@color/Transparent"
+        android:text="QR"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintEnd_toEndOf="@+id/navBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar" />
+
+
     <Button
         android:id="@+id/btnRedeem"
         android:layout_width="165dp"
@@ -24,7 +63,7 @@
         android:id="@+id/spinner"
         android:layout_width="321dp"
         android:layout_height="52dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="52dp"
         android:backgroundTint="@color/black"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,10 +85,10 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/museumVisited2"
+        android:id="@+id/amuseStamp"
         android:layout_width="325dp"
-        android:layout_height="246dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/dropdown_curved_corner"
         android:padding="16dp"
         android:text="@string/amuseStamp"
@@ -58,16 +97,18 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/museumVisited3" />
+        app:layout_constraintTop_toBottomOf="@+id/mDetails1" />
+
+
 
     <TextView
-        android:id="@+id/museumVisited3"
+        android:id="@+id/mDetails1"
         android:layout_width="325dp"
-        android:layout_height="85dp"
+        android:layout_height="110dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/dropdown_curved_corner"
         android:padding="16dp"
-        android:text="@string/museumDetails"
+        android:text="@string/mDetails1"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -76,10 +117,52 @@
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <TextView
+        android:id="@+id/mDetails2"
+        android:layout_width="178dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/mDetails2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/mDetails3"
+        android:layout_width="178dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/mDetails3"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/mDetails4"
+        android:layout_width="178dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/mDetails4"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
         android:id="@+id/myAmuseTitle"
         android:layout_width="290dp"
         android:layout_height="28dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="128dp"
         android:fontFamily="serif"
         android:text="@string/myAmuseTitle"
         android:textAlignment="center"
@@ -89,5 +172,85 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:srcCompat="@drawable/amuselogo2" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:srcCompat="@drawable/amuselogo1"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:srcCompat="@drawable/amuselogo1"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
+        app:srcCompat="@drawable/amuselogo1"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/amuselogo1"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:srcCompat="@drawable/amuselogo2"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:srcCompat="@drawable/amuselogo2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:srcCompat="@drawable/amuselogo2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:srcCompat="@drawable/amuselogo2"
+        tools:layout_editor_absoluteX="294dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:srcCompat="@drawable/amuselogo2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

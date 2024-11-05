@@ -28,10 +28,10 @@
 
 
     <string name="museumDetails">
-        QR Codes Scanned :      4 <br/>
-        QR Puzzles Solved:      2 <br/>
-        Stamps Collected :      6 <br/>
-        Last Visited     :      10/15/2024 <br/>
+        QR Codes Scanned :      4 <br />
+        QR Puzzles Solved:      2 <br />
+        Stamps Collected :      6 <br />
+        Last Visited     :      10/15/2024 <br />
     </string>
 
 
@@ -45,4 +45,4 @@
     </string-array>
    -->
 
-    </resources>
+</resources>

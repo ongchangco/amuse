@@ -28,7 +28,6 @@
             android:layout_marginStart="25dp"
             android:background="@drawable/menu_buttton" />
 
-
     </Toolbar>
 
     <Button

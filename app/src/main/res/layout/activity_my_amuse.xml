@@ -46,43 +46,37 @@
         app:layout_constraintEnd_toEndOf="@+id/navBar"
         app:layout_constraintTop_toTopOf="@+id/navBar" />
 
-
-    <Button
-        android:id="@+id/btnRedeem"
-        android:layout_width="165dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/btn_rounded_corner"
-        android:text="@string/btnRedeem"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="321dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="52dp"
-        android:backgroundTint="@color/black"
-        android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myAmuseTitle" />
-
     <TextView
         android:id="@+id/museumVisited"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
         android:layout_marginBottom="4dp"
         android:text="@string/museumVisited"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@id/myAmuseTitle"
+        app:layout_constraintBottom_toTopOf="@+id/rlDropdown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rlDropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/museumVisited"
+        android:background="@color/Juniper"
+        android:layout_margin="5dp">
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="321dp"
+            android:layout_height="52dp"
+            android:spinnerMode="dropdown"/>
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/amuseStamp"
@@ -114,7 +108,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/rlDropdown" />
 
     <TextView
         android:id="@+id/mDetails2"
@@ -128,7 +122,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/rlDropdown" />
 
     <TextView
         android:id="@+id/mDetails3"
@@ -142,7 +136,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/rlDropdown" />
 
     <TextView
         android:id="@+id/mDetails4"
@@ -156,7 +150,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/rlDropdown" />
 
     <TextView
         android:id="@+id/myAmuseTitle"
@@ -253,4 +247,15 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:srcCompat="@drawable/amuselogo2" />
 
+    <Button
+        android:id="@+id/btnRedeem"
+        android:layout_width="165dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_rounded_corner"
+        android:text="@string/btnRedeem"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

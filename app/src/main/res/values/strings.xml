@@ -9,6 +9,12 @@
     <string name="btnMyAMUSE">My AMUSE</string>
     <string name="btnLogin">Login</string>
     <string name="btnRegister">Register</string>
+    <string name="btnFinish">Finish</string>
+    <string name="txtMuseumName">The National Museum</string>
+    <string name="txtMuseumDesc">The Museum is renowned
+institution dedicated to
+uncovering and preserving the
+remnants of ancient, forgotten cultures. It vast halls display artifacts, relics, and reconstructed ruins from lost societies.</string>
 
     //QR CODE RESULT PAGE
     <string name="resTitle">MONA LISA’S SCREAM</string>

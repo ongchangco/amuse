@@ -15,6 +15,7 @@
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@id/clButtons"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -55,6 +56,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/clTitle">
 
@@ -62,13 +64,13 @@
             android:id="@+id/btnFaM"
             android:layout_width="200dp"
             android:layout_height="55dp"
+            android:layout_margin="10dp"
             android:background="@drawable/btn_rounded_corner"
             android:backgroundTint="@color/Juniper"
             android:shadowColor="@color/black"
             android:shadowRadius="2"
             android:text="@string/btnFaM"
             android:textColor="@color/white"
-            android:layout_margin="10dp"
             app:layout_constraintBottom_toTopOf="@id/btnMNav"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -78,49 +80,49 @@
             android:id="@+id/btnMNav"
             android:layout_width="200dp"
             android:layout_height="55dp"
+            android:layout_margin="10dp"
             android:background="@drawable/btn_rounded_corner"
             android:backgroundTint="@color/Juniper"
             android:shadowColor="@color/black"
             android:shadowRadius="2"
             android:text="@string/btnMNav"
             android:textColor="@color/white"
-            android:layout_margin="10dp"
+            app:layout_constraintBottom_toTopOf="@id/btnQrScanner"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnFaM"
-            app:layout_constraintBottom_toTopOf="@id/btnQrScanner"/>
+            app:layout_constraintTop_toBottomOf="@id/btnFaM" />
 
         <Button
             android:id="@+id/btnQrScanner"
             android:layout_width="200dp"
             android:layout_height="55dp"
+            android:layout_margin="10dp"
             android:background="@drawable/btn_rounded_corner"
             android:backgroundTint="@color/Juniper"
             android:shadowColor="@color/black"
             android:shadowRadius="2"
             android:text="@string/btnQrScan"
             android:textColor="@color/white"
-            android:layout_margin="10dp"
+            app:layout_constraintBottom_toTopOf="@id/btnMyAMUSE"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnMNav"
-            app:layout_constraintBottom_toTopOf="@id/btnMyAMUSE"/>
+            app:layout_constraintTop_toBottomOf="@id/btnMNav" />
 
         <Button
             android:id="@+id/btnMyAMUSE"
             android:layout_width="200dp"
             android:layout_height="55dp"
+            android:layout_margin="10dp"
             android:background="@drawable/btn_rounded_corner"
             android:backgroundTint="@color/Juniper"
             android:shadowColor="@color/black"
             android:shadowRadius="2"
             android:text="@string/btnMyAMUSE"
             android:textColor="@color/white"
-            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnQrScanner"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/btnQrScanner" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -69,31 +69,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/puzzleTitle"
         app:srcCompat="@drawable/monalisa_scream" />
+
     <RelativeLayout
-        android:layout_width="297dp"
-        android:layout_height="240dp"
-        android:background="@color/Patina"
+        android:id="@+id/relativeLayout"
+        android:layout_width="283dp"
+        android:layout_height="216dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintTop_toBottomOf="@id/monalisascream"
-        app:layout_constraintBottom_toTopOf="@id/btnRedeem"
+        android:background="@color/Patina"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/monalisascream">
 
     </RelativeLayout>
 
     <Button
         android:id="@+id/btnRedeem"
-        android:layout_width="200dp"
-        android:layout_height="55dp"
+        android:layout_width="165dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/btn_rounded_corner"
+
         android:backgroundTint="@color/Juniper"
         android:shadowColor="@color/black"
-        android:shadowRadius="2"
         android:text="@string/btnFinish"
-        android:textColor="@color/white"
-        android:layout_margin="10dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

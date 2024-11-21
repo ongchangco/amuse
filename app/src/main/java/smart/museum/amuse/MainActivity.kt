@@ -20,10 +20,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         val btnLogIn = findViewById<Button>(R.id.btnLogin)
+        val btnReg = findViewById<Button>(R.id.btnRegister)
 
         btnLogIn.setOnClickListener{
-            val goto_Dashboard = Intent(this, Dashboard::class.java)
-            startActivity(goto_Dashboard)
+            val goto_Login = Intent(this, LogIn::class.java)
+            startActivity(goto_Login)
+        }
+
+        btnReg.setOnClickListener{
+            val goto_Register = Intent(this, Register::class.java)
+            startActivity(goto_Register)
         }
     }
 }

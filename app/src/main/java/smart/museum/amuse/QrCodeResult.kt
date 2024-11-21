@@ -14,10 +14,11 @@ class QrCodeResult : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_qr_code_result)
 
-        var puzzleButton = findViewById<Button>(R.id.btnPuzzle)
-        puzzleButton.setOnClickListener {
-            val intentPzl = Intent (this,MyAMUSE::class.java)
-            startActivity(intentPzl)
+        val btnPuzzle = findViewById<Button>(R.id.btnPuzzle)
+
+        btnPuzzle.setOnClickListener{
+            val goto_Puzzle = Intent(this, MyAMUSE::class.java)
+            startActivity(goto_Puzzle)
 
         }
 

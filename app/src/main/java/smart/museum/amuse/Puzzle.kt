@@ -15,10 +15,11 @@ class Puzzle : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_puzzle)
 
-        var RedeemButton = findViewById<Button>(R.id.btnRedeem)
-        RedeemButton.setOnClickListener {
-            val intentRdm = Intent (this,QrCodeResult::class.java)
-            startActivity(intentRdm)
+        val btnFinish = findViewById<Button>(R.id.btnFinish)
+
+        btnFinish.setOnClickListener{
+            val goto_Redeem = Intent(this, QrCodeResult::class.java)
+            startActivity(goto_Redeem)
 
         }
 

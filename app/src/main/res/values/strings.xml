@@ -31,12 +31,27 @@ remnants of ancient, forgotten cultures. It vast halls display artifacts, relics
     <string name="museumVisited">MUSEUMS VISITED:</string>
     <string name="btnRedeem">REDEEM</string>
     <string name="amuseStamp">Solve MORE PUZZLES to collect MORE AMUSE STAMPS!</string>
-
-
     <string name="mDetails1">QR Codes Scanned :      4</string>
     <string name="mDetails2">QR Puzzles Solved:      2</string>
     <string name="mDetails3">Stamps Collected :      6</string>
     <string name="mDetails4">Last Visited     :      10/15/2024</string>
+
+    //LOGIN PAGE
+    <string name="LoginCD">Login Logo Background</string>
+    <string name="logo">Amuse Logo</string>
+
+    <string name="inpUser">Username</string>
+    <string name="inpEmail">Email</string>
+    <string name="inpPass">Password</string>
+    <string name="inpConPass">Confirm Password</string>
+
+    <string name="btnLoginFP">LOGIN</string>
+    <string name="btnSignUpFP">SIGN UP</string>
+
+    <string name="txtLogin">Login</string>
+    <string name="txtSignUp">Sign Up</string>
+    <string name="descSignUp">Don\'t have an account?</string>
+    <string name="descLogin">Already have an account?</string>
 
     <!--
     <string name="dropdownMA"> </string>

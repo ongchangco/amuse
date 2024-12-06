@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,6 +24,10 @@ class MyAMUSE : AppCompatActivity() {
             insets
         }
 
+    val spinner = findViewById<Spinner>(R.id.spinner)
+    val items = listOf("The National Museum","Museo de la Roma")
+    val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, items)
+    spinner.adapter = adapter
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater: MenuInflater = menuInflater

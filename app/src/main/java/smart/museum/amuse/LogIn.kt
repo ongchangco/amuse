@@ -26,8 +26,6 @@ class LogIn : AppCompatActivity() {
             insets
         }
 
-
-
         val btnLogin = findViewById<Button>(R.id.btnLoginFP)
 
         btnLogin.setOnClickListener{

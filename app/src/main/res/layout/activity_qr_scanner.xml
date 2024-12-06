@@ -29,7 +29,32 @@
             app:frameSize="0.75"
             app:frameThickness="2dp"
             app:frameVerticalBias="0.5"
-            app:maskColor="#77000000"/>
+            app:maskColor="#77000000">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clLgnLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/btnQR"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.budiyev.android.codescanner.CodeScannerView>
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/navBar"

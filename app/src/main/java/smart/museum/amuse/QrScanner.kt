@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -34,6 +35,14 @@ class QrScanner : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val btnQR = findViewById<Button>(R.id.btnQR)
+
+        btnQR.setOnClickListener{
+            val goto_qrResult = Intent(this, QrCodeResult::class.java)
+            startActivity(goto_qrResult)
+        }
+
         val scannerView = findViewById<CodeScannerView>(R.id.scanner_view)
 
         codeScanner = CodeScanner(this, scannerView)

@@ -170,7 +170,7 @@
             android:id="@+id/btnSignUpFP"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="44dp"
             android:background="@drawable/btn_rounded_corner"
             android:backgroundTint="@color/DarkBlue"
             android:letterSpacing="0.3"
@@ -179,6 +179,7 @@
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/inpConPass" />
 

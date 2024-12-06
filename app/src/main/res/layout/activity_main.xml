@@ -14,9 +14,9 @@
         android:layout_height="343dp"
         android:contentDescription="@string/LoginCD"
         app:srcCompat="@drawable/loginbg"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-30dp"
-        tools:layout_editor_absoluteY="-25dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clLgnLogo"

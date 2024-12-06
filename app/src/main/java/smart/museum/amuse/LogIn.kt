@@ -26,18 +26,13 @@ class LogIn : AppCompatActivity() {
             insets
         }
 
-        uInput = findViewById(R.id.userInput)
-        pInput = findViewById(R.id.passInput)
 
-        val btnLogin = findViewById<Button>(R.id.btnLogin)
+
+        val btnLogin = findViewById<Button>(R.id.btnLoginFP)
 
         btnLogin.setOnClickListener{
             val goto_Login = Intent(this, Dashboard::class.java)
             startActivity(goto_Login)
-
-            val username = uInput.text.toString()
-            val password = pInput.text.toString()
-            Log.i("Credentials", "Username : $username and Password : $password")
 
         }
     }

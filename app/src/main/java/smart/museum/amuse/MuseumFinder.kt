@@ -75,8 +75,8 @@ class MuseumFinder : AppCompatActivity(), OnMapReadyCallback {
 
         // Add a marker and move the camera
         val location = LatLng(14.5833, 120.9822)
-        googleMap.addMarker(MarkerOptions().position(location).title("Marker in Sydney"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 10f))
+        googleMap.addMarker(MarkerOptions().position(location).title("The National Museum of Natural History"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 15f))
     }
 }
 

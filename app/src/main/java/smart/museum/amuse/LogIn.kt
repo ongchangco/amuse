@@ -14,6 +14,7 @@ class LogIn : AppCompatActivity() {
 
     lateinit var uInput : EditText
     lateinit var pInput : EditText
+    lateinit var loginBtn : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,22 +26,19 @@ class LogIn : AppCompatActivity() {
             insets
         }
 
-        val btnLoginFP = findViewById<Button>(R.id.btnLoginFP)
-        val btnSignUp = findViewById<Button>(R.id.btnSignUp)
+        uInput = findViewById(R.id.userInput)
+        pInput = findViewById(R.id.passInput)
 
-        btnLoginFP.setOnClickListener{
-            val goto_MDashboard = Intent(this, Dashboard::class.java)
-            startActivity(goto_MDashboard)
-        }
+        val btnLogin = findViewById<Button>(R.id.btnLogin)
 
-        btnSignUp.setOnClickListener{
-            val goto_Register = Intent(this, Register::class.java)
-            startActivity(goto_Register)
-        }
+        btnLogin.setOnClickListener{
+            val goto_Login = Intent(this, Dashboard::class.java)
+            startActivity(goto_Login)
 
-        val username = uInput.text.toString()
+            val username = uInput.text.toString()
             val password = pInput.text.toString()
             Log.i("Credentials", "Username : $username and Password : $password")
 
         }
     }
+}
